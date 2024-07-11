@@ -60,3 +60,19 @@ function previous() {
     }
     play();
 }
+
+function user() {
+    let username= document.getElementById("userName").value;
+   let user=document.getElementById("user");
+   user.style.display= "block";
+   user.innerHTML=`Aniket Welcomes You <h3 style='color: green';>${username}<span> !!</span></h3>`;
+    
+
+   setTimeout(() => {
+  document.getElementById("userName").style.display="none";
+    document.getElementById("login").style.display="none";
+    user.innerHTML=`<h3 style='color: green';>${username}<span> !!</span></h3>`;
+   }, 2000);
+
+
+}

@@ -9,8 +9,8 @@
 <body>
     <div class="player">
         <h2>PI Music Player</h2>
-        <input type="text" id="gdriveLink" placeholder="Enter Google Drive Link">
-        <button onclick="loadMusic()">Search</button>
+        <input type="text" id="userName" placeholder="Enter Your Name">
+        <button id="login" onclick="user()">Log in</button>
         
         <div class="controls">
             <button onclick="previous()">Previous</button>
@@ -23,8 +23,12 @@
         <!-- Embedded player will be inserted here -->
     </div>
 
-    <div>
+    <div style="margin-top: 20px;">
         Made with ❤️ by Aniket Khangar
+    </div>
+
+    <div id="user" style="display: none;">
+
     </div>
 
     <script src="script.js"></script>
