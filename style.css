@@ -2,10 +2,11 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f0f0f0;
     display: flex;
-    flex-direction: row;  
+    flex-direction: column;  
+    align-items: center;
+    justify-content: center;
     height: 100vh;
-    margin: 100px;
-
+    margin: 0;
 }
 
 .player {
@@ -14,11 +15,10 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    max-width: 400px;
-    width: fit-content;
-    max-height: 400px;
-    margin: 30px;
-    padding: 50px;
+    max-width: 90%;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 20px;
 }
 
 h2 {
@@ -32,6 +32,7 @@ input[type="text"] {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
 button {
@@ -52,9 +53,42 @@ button:hover {
     margin-top: 20px;
 }
 
-#audioContainer{
-    margin-top: 50px;
-    width: 700px;
-    height: 500px;
+#audioContainer {
+    margin-top: 20px;
+    width: 90%;
+    height: 80px;
+    max-width: 600px;
+}
 
+@media (min-width: 600px) {
+    .player {
+        padding: 30px;
+        max-width: 400px;
+    }
+
+    #audioContainer {
+        height: 100px;
+    }
+}
+
+@media (min-width: 768px) {
+    .player {
+        padding: 40px;
+        max-width: 500px;
+    }
+
+    #audioContainer {
+        height: 120px;
+    }
+}
+
+@media (min-width: 992px) {
+    .player {
+        padding: 50px;
+        max-width: 600px;
+    }
+
+    #audioContainer {
+        height: 150px;
+    }
 }
