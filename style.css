@@ -1,12 +1,9 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f0f0;
-    display: flex;
-    flex-direction: column;  
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
+   display: grid;
+   grid-template-columns: 500px auto;
+   gap: 100px;
+   margin-left: 300px;
+
 }
 
 .player {
@@ -107,6 +104,32 @@ button:hover {
     text-wrap: wrap;
     text-align: center;
     border-radius: 10px;
+}
+
+
+#list{
+    width: 500px;
+    height: 50vh;
+    overflow-y: scroll;
+}
+
+ul > li{
+    cursor: pointer;
+    margin-bottom: 20px;
+    list-style-type: none;
+    padding: 6px;
+    text-shadow: #333;
+    border-bottom: 1px solid green;
+    border-top: 1px solid rgb(233, 156, 13);
+}
+
+ul > li:hover{
+    background-color: rgb(134, 134, 223);
+}
+
+.curSong{
+    background-color: rgb(115, 175, 165);
+    text-decoration-thickness: 5px;
 }
 
 
