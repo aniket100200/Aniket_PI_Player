@@ -1,9 +1,11 @@
 body {
-   display: grid;
-   grid-template-columns: 500px auto;
-   gap: 100px;
-   margin-left: 300px;
-
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
 }
 
 .player {
@@ -12,10 +14,8 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    max-width: 90%;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 20px;
+    max-width: 100%;
+    margin: auto;
 }
 
 h2 {
@@ -50,44 +50,12 @@ button:hover {
     margin-top: 20px;
 }
 
-#audioContainer {
+.audio-container {
     margin-top: 20px;
-    width: 90%;
+    width: 100%;
     height: 80px;
     max-width: 600px;
-}
-
-@media (min-width: 600px) {
-    .player {
-        padding: 30px;
-        max-width: 400px;
-    }
-
-    #audioContainer {
-        height: 100px;
-    }
-}
-
-@media (min-width: 768px) {
-    .player {
-        padding: 40px;
-        max-width: 500px;
-    }
-
-    #audioContainer {
-        height: 120px;
-    }
-}
-
-@media (min-width: 992px) {
-    .player {
-        padding: 50px;
-        max-width: 600px;
-    }
-
-    #audioContainer {
-        height: 150px;
-    }
+    margin: auto;
 }
 
 #user {
@@ -106,16 +74,20 @@ button:hover {
     border-radius: 10px;
 }
 
-
-#list{
-    width: 500px;
-    height: 50vh;
-    overflow-y: scroll;
+.list {
+    overflow-y: auto;
 }
 
-ul > li{
+#list {
+    width: 100%;
+    max-height: 50vh;
+    overflow-y: scroll;
+    margin: auto;
+}
+
+ul > li {
     cursor: pointer;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     list-style-type: none;
     padding: 6px;
     text-shadow: #333;
@@ -123,13 +95,38 @@ ul > li{
     border-top: 1px solid rgb(233, 156, 13);
 }
 
-ul > li:hover{
+ul > li:hover {
     background-color: rgb(134, 134, 223);
 }
 
-.curSong{
+.curSong {
     background-color: rgb(115, 175, 165);
     text-decoration-thickness: 5px;
 }
 
+footer {
+    grid-column: span 2;
+    text-align: center;
+    margin-top: 20px;
+}
 
+.footer-content {
+    font-size: 16px;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    body {
+        display: block;
+        padding: 10px;
+    }
+
+    .player, .audio-container, .list {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    footer {
+        margin-top: 10px;
+    }
+}

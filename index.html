@@ -3,45 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PI Player</title>
+    <title>PI Music Player</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <section>
-    <div class="player">
-        <h2>PI Music Player</h2>
-        <input type="text" id="userName" placeholder="Enter Your Name">
-        <button id="login" onclick="user()">Log in</button>
-        
-        <div class="controls">
-            <button onclick="previous()">Previous</button>
-            <button onclick="randomFunction()">Load</button>
-            <button onclick="next()">Next</button>
+    <section>
+        <div class="player">
+            <h2>PI Music Player</h2>
+            <input type="text" id="userName" placeholder="Enter Your Name">
+            <button id="login" onclick="user()">Log in</button>
+            <div class="controls">
+                <button onclick="previous()">Previous</button>
+                <button onclick="randomFunction()">Load</button>
+                <button onclick="next()">Next</button>
+            </div>
         </div>
-    </div>
-
-    <div class="audio-container" id="audioContainer">
-        <!-- Embedded player will be inserted here -->
-         
-    </div>
-   </section>
-   <section class="list">
-    <div id="list">
-
-    </div>
-   </section>
-
+        <div class="audio-container" id="audioContainer">
+            <!-- Embedded player will be inserted here -->
+        </div>
+    </section>
+    <section class="list">
+        <div id="list">
+            <!-- Song list will be inserted here -->
+        </div>
+    </section>
     <footer>
-        <div style="margin-top: 20px;">
+        <div class="footer-content">
             Made with ❤️ by <b>Aniket Khangar</b>
         </div>
-        <div id="user" style="display: none;">
-
-        </div>
+        <div id="user" style="display: none;"></div>
     </footer>
-
-    
-
     <script src="script.js"></script>
 </body>
 </html>

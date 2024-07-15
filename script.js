@@ -30,47 +30,42 @@ const gdriveLinks = [
     { title: "Khamakha Kwab Bunta Raha", link: 'https://drive.google.com/file/d/1ELzKGjydXidCtWik8f3eKNA8wmAO3ths/view?usp=drivesdk' },
     { title: "Aaila Re aaila", link: 'https://drive.google.com/file/d/1K8mZ4FTDYfQlG2ND4bUordKBUPPUaw2z/view?usp=drivesdk' },
     { title: "Rim zim Rim Zim", link: 'https://drive.google.com/file/d/1FcAM0oa5AgsXX4r0SJhN1To5boRo357I/view?usp=drivesdk' },
-    { title: "Song 31", link: 'https://drive.google.com/file/d/1LDi_NQMeBIMFCpx3Co0V6QrBKYuiyqad/view?usp=drivesdk' },
-    { title: "Song 32", link: 'https://drive.google.com/file/d/1FonPvSFaCX3TiqwS_c9_ZUzH0TbUVzhh/view?usp=drivesdk' },
-    { title: "Song 33", link: 'https://drive.google.com/file/d/1FXpR9gDg1VNvc7kxV6Xbt4yOULW8UgyL/view?usp=drivesdk' },
-    { title: "Song 34", link: 'https://drive.google.com/file/d/1LMPkeTpC_EkEPZItGKNu1iOONpJzGJTn/view?usp=drivesdk' },
-    { title: "Song 35", link: 'https://drive.google.com/file/d/1MQMXEQw6SWCs2nB6QtnNTd_O2OcCqBwH/view?usp=drivesdk' },
-    { title: "Song 36", link: 'https://drive.google.com/file/d/1G-yl4m2Vwh2YAPYpBQFi8hXjkENrehZ6/view?usp=drivesdk' },
-    { title: "Song 37", link: 'https://drive.google.com/file/d/1EVUiiicQ4CT2--RGQvsD-nB08fyXRlVL/view?usp=drivesdk' },
-    { title: "Song 38", link: 'https://drive.google.com/file/d/1L9xSrwEivSKc82byUa1XBAZldwU-IIRw/view?usp=drivesdk' },
-    { title: "Song 39", link: 'https://drive.google.com/file/d/1MUh3YjrU5pJ7NbpXS3n1gFaZS0XEfuf-/view?usp=drivesdk' },
-    { title: "Song 40", link: 'https://drive.google.com/file/d/1EKCptXDReN_r207m6s1DxUoGdo0cTo5W/view?usp=drivesdk' },
-    { title: "Song 41", link: 'https://drive.google.com/file/d/1MqL0fHtCpPH1W52bHLO7dos7GQ7iP_OB/view?usp=drivesdk' },
-    { title: "Song 42", link: 'https://drive.google.com/file/d/1ISFbYwuI_YPN3M0vpwNhQsVXB2-ZErln/view?usp=drivesdk' },
-    { title: "Song 43", link: 'https://drive.google.com/file/d/1G3riKv7w5QI7dj1xfB2dpRMFGotPCwDq/view?usp=drivesdk' },
-    { title: "Song 44", link: 'https://drive.google.com/file/d/1MOh9slW_eCK97-zO0jo9U5N4QihliH_4/view?usp=drivesdk' },
-    { title: "Song 45", link: 'https://drive.google.com/file/d/1I5Us0N6oDRYIZ0jpd2aCKjTW2AFUuNWu/view?usp=drivesdk' },
-    { title: "Song 46", link: 'https://drive.google.com/file/d/1LWOb9TQbJ3EUNtJp7iYMuZ-KdbGfqjDG/view?usp=drivesdk' },
-    { title: "Song 47", link: 'https://drive.google.com/file/d/1KegC-BZaSM7Ukw0i4nMqeMNp5LbuKfQh/view?usp=drivesdk' },
-    { title: "Song 48", link: 'https://drive.google.com/file/d/1JbZD_5pk1M4WsTCOWt6XdCybyaB0T-7_/view?usp=drivesdk' },
-    { title: "Song 49", link: 'https://drive.google.com/file/d/1FgMmMn3MTuNCaRvXN15N8rSWSNlngGsh/view?usp=drivesdk' },
-    { title: "Song 50", link: 'https://drive.google.com/file/d/1IRdQ73XV16Njuk3RakytGRxQEoSnAfCM/view?usp=drivesdk' },
-    { title: "Song 51", link: 'https://drive.google.com/file/d/1Kwb6z1Kmz64tCHWvAhieHavAZ8cSCN44/view?usp=drivesdk' },
-    { title: "Song 52", link: 'https://drive.google.com/file/d/1ERG2KGpDw3ZlxLPpNlpEEsfdSBkTV5ej/view?usp=drivesdk' },
-    { title: "Song 53", link: 'https://drive.google.com/file/d/1I0MAND49KAzd67AN3f1Y5klcgnZNyXfH/view?usp=drivesdk' },
-    { title: "Song 54", link: 'https://drive.google.com/file/d/1N-rwXgMc1iv8ZrE3l32ETKf6Lp1Ts47f/view?usp=drivesdk' },
-    { title: "Song 55", link: 'https://drive.google.com/file/d/1JzIY1VhKq-gjaqSJAY6sPkzLNPP-3PvP/view?usp=drivesdk' },
-    { title: "Song 56", link: 'https://drive.google.com/file/d/1LQGmZva4w5CFvIuh3ab25ATBoe4ktbwf/view?usp=drivesdk' },
-    { title: "Song 57", link: 'https://drive.google.com/file/d/1JdLkNbpI8ayGICvrntdQt3XkkzilfHIt/view?usp=drivesdk' },
-    { title: "Song 58", link: 'https://drive.google.com/file/d/1EulwKPmv6HjNS_FLWAj73InyPoJROEHt/view?usp=drivesdk' },
-    { title: "Song 59", link: 'https://drive.google.com/file/d/1FBe0e1eXmjyJZvmbm4W7vEu-UEmaWa2t/view?usp=drivesdk' },
-    { title: "Song 60", link: 'https://drive.google.com/file/d/1JCG5ACkkuZH3cmlKeIOMvnKdjHGXB2Ko/view?usp=drivesdk' },
-    { title: "Song 61", link: 'https://drive.google.com/file/d/1EznOkh3qnxp7gK4sk1_Yz_OX7GbFuLfE/view?usp=drivesdk' },
-    { title: "Song 62", link: 'https://drive.google.com/file/d/1GlJupr82uaoW5V5Me2mnf0bhwtOJv9MM/view?usp=drivesdk' },
-    { title: "Song 63", link: 'https://drive.google.com/file/d/1FzvkSVqK7LwaEqE_whF4VTNv8oabSMX_/view?usp=drivesdk' },
-    { title: "Song 64", link: 'https://drive.google.com/file/d/1EmrZrrDHU2gZUaQOoNt5iLW9HKDy-zM3/view?usp=drivesdk' },
-    { title: "Song 65", link: 'https://drive.google.com/file/d/1IJhkQGkoB14ItR--s7D33fDYlOXwNPn8/view?usp=drivesdk' },
-    { title: "Song 66", link: 'https://drive.google.com/file/d/1nn9xrhCF_G519pw3a0Ir9CNnLP81Q-6W/view?usp=drivesdk' }
+    { title: "Aur kuch Bair Mujhe", link: 'https://drive.google.com/file/d/1LDi_NQMeBIMFCpx3Co0V6QrBKYuiyqad/view?usp=drivesdk' },
+    { title: "O Re Piya", link: 'https://drive.google.com/file/d/1FonPvSFaCX3TiqwS_c9_ZUzH0TbUVzhh/view?usp=drivesdk' },
+    { title: "Desh Rangila", link: 'https://drive.google.com/file/d/1FXpR9gDg1VNvc7kxV6Xbt4yOULW8UgyL/view?usp=drivesdk' },
+    { title: "Jannat Jaha", link: 'https://drive.google.com/file/d/1LMPkeTpC_EkEPZItGKNu1iOONpJzGJTn/view?usp=drivesdk' },
+    { title: "Wada Raha Sanam", link: 'https://drive.google.com/file/d/1MQMXEQw6SWCs2nB6QtnNTd_O2OcCqBwH/view?usp=drivesdk' },
+    { title: "Fimi Hai Tera Mera Pyar", link: 'https://drive.google.com/file/d/1G-yl4m2Vwh2YAPYpBQFi8hXjkENrehZ6/view?usp=drivesdk' },
+    { title: "Tuz se Mera Deen Dharam Tuzse Meri Duhai", link: 'https://drive.google.com/file/d/1EVUiiicQ4CT2--RGQvsD-nB08fyXRlVL/view?usp=drivesdk' },
+    { title: "Lambi Judai", link: 'https://drive.google.com/file/d/1L9xSrwEivSKc82byUa1XBAZldwU-IIRw/view?usp=drivesdk' },
+    { title: "Papa Kahte hai Bada Naam Krega", link: 'https://drive.google.com/file/d/1MUh3YjrU5pJ7NbpXS3n1gFaZS0XEfuf-/view?usp=drivesdk' },
+    { title: "Tu Jaha Main Waha", link: 'https://drive.google.com/file/d/1EKCptXDReN_r207m6s1DxUoGdo0cTo5W/view?usp=drivesdk' },
+   
+    { title: "Aadmi Khilona Hai", link: 'https://drive.google.com/file/d/1MOh9slW_eCK97-zO0jo9U5N4QihliH_4/view?usp=drivesdk' },
+   
+    { title: "Agar Tum Mil Jao", link: 'https://drive.google.com/file/d/1KegC-BZaSM7Ukw0i4nMqeMNp5LbuKfQh/view?usp=drivesdk' },
+    { title: "Tum Baarsh ke mausam me", link: 'https://drive.google.com/file/d/1JbZD_5pk1M4WsTCOWt6XdCybyaB0T-7_/view?usp=drivesdk' },
+    { title: "Kahin ye tere dil se chup chup ke", link: 'https://drive.google.com/file/d/1FgMmMn3MTuNCaRvXN15N8rSWSNlngGsh/view?usp=drivesdk' },
+    { title: "Dil Jisk jinda hai O tum ho", link: 'https://drive.google.com/file/d/1IRdQ73XV16Njuk3RakytGRxQEoSnAfCM/view?usp=drivesdk' },
+ 
+    { title: "Do Pal ka khwabo ka kaarwaan", link: 'https://drive.google.com/file/d/1ERG2KGpDw3ZlxLPpNlpEEsfdSBkTV5ej/view?usp=drivesdk' },
+    { title: "door ankhiyonse jaye na", link: 'https://drive.google.com/file/d/1I0MAND49KAzd67AN3f1Y5klcgnZNyXfH/view?usp=drivesdk' },
+   
+    { title: "Gulabi Saadi", link: 'https://drive.google.com/file/d/1JzIY1VhKq-gjaqSJAY6sPkzLNPP-3PvP/view?usp=drivesdk' },
+    { title: "Ha Tu Hai Ha Tu Hai", link: 'https://drive.google.com/file/d/1LQGmZva4w5CFvIuh3ab25ATBoe4ktbwf/view?usp=drivesdk' },
+    { title: "halki Halki si Barsat aa gayi", link: 'https://drive.google.com/file/d/1JdLkNbpI8ayGICvrntdQt3XkkzilfHIt/view?usp=drivesdk' },
+    { title: "Hole Hole", link: 'https://drive.google.com/file/d/1EulwKPmv6HjNS_FLWAj73InyPoJROEHt/view?usp=drivesdk' },
+  
+    { title: "Heeriyen Dil Janiye ", link: 'https://drive.google.com/file/d/1JCG5ACkkuZH3cmlKeIOMvnKdjHGXB2Ko/view?usp=drivesdk' },
+    { title: "Ye Sona Ye Sona", link: 'https://drive.google.com/file/d/1EznOkh3qnxp7gK4sk1_Yz_OX7GbFuLfE/view?usp=drivesdk' },
+   
+    { title: "Kaisa Ye Ishq Hai Ajab sa risk hai", link: 'https://drive.google.com/file/d/1EmrZrrDHU2gZUaQOoNt5iLW9HKDy-zM3/view?usp=drivesdk' },
+  
+    { title: "You Are My Sonia", link: 'https://drive.google.com/file/d/1nn9xrhCF_G519pw3a0Ir9CNnLP81Q-6W/view?usp=drivesdk' }
 ];
 
 function loadMusic() {
     const gdriveLink = document.getElementById('gdriveLink').value;
-
     if (gdriveLink.includes('drive.google.com')) {
         const fileId = gdriveLink.match(/\/d\/([^\/]+)\//)[1];
         const embedLink = `https://drive.google.com/file/d/${fileId}/preview`;
@@ -86,19 +81,17 @@ function loadMusic() {
 }
 
 function play() {
-
-    let username=localStorage.getItem("user");
-    if(!username){
-        alert("please Login!!");
+    let username = localStorage.getItem("user");
+    if (!username) {
+        alert("Please Login!!");
         return;
     }
     if (currentIndex >= 0 && currentIndex < gdriveLinks.length) {
-        console.log(gdriveLinks[currentIndex]["link"]);
-        const embedLink = `https://drive.google.com/file/d/${gdriveLinks[currentIndex]["link"].match(/\/d\/([^\/]+)\//)[1]}/preview`;
+        console.log(gdriveLinks[currentIndex].link);
+        const embedLink = `https://drive.google.com/file/d/${gdriveLinks[currentIndex].link.match(/\/d\/([^\/]+)\//)[1]}/preview`;
         const audioContainer = document.getElementById('audioContainer');
         audioContainer.innerHTML = `<iframe id="audioPlayer" src="${embedLink}" width="100%" height="80" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>`;
 
-        // Add event listener for the iframe content load
         const audioPlayer = document.getElementById('audioPlayer');
         audioPlayer.onload = () => {
             const innerDoc = audioPlayer.contentDocument || audioPlayer.contentWindow.document;
@@ -128,24 +121,22 @@ function previous() {
     play();
 }
 
-function randomFunction(params) {
-    currentIndex = parseInt((Math.random()*100000)%gdriveLinks.length);
+function randomFunction() {
+    currentIndex = parseInt((Math.random() * 100000) % gdriveLinks.length);
     play();
-    
 }
 
 function user() {
-
     let username = document.getElementById("userName").value;
     let user = document.getElementById("user");
-    localStorage.setItem("user",username);
+    localStorage.setItem("user", username);
     user.style.display = "block";
-    user.innerHTML = `Aniket Welcomes You <h3 style='color: green';>${username}<span> !!</span></h3>`;
+    user.innerHTML = `Aniket Welcomes You <h3 style='color: green;'>${username}<span> !!</span></h3>`;
 
     setTimeout(() => {
         document.getElementById("userName").style.display = "none";
         document.getElementById("login").style.display = "none";
-        user.innerHTML = `<h3 style='color: green';>${username}<span> !!</span></h3>`;
+        user.innerHTML = `<h3 style='color: green;'>${username}<span> !!</span></h3>`;
     }, 2000);
     play();
 }
@@ -164,41 +155,41 @@ function setupIframeListener() {
     };
 }
 
-window.onload = ()=>{
-    let username=sessionStorage.getItem("user");
-    if(username){
-        document.getElementById("userName").value=username;
-        setTimeout(()=>{          
-           document.getElementById("login").click();
-           play();
-        },300);
+window.onload = () => {
+    let username = sessionStorage.getItem("user");
+    if (username) {
+        document.getElementById("userName").value = username;
+        setTimeout(() => {
+            document.getElementById("login").click();
+            play();
+        }, 300);
     }
-}
+};
 
-const audioContainer=document.getElementById("audioContainer");
+const audioContainer = document.getElementById("audioContainer");
 
 function createList() {
-    
-    const list= document.getElementById("list");
-    let orderedList= document.createElement("ul");
-    for(let i=0;i<gdriveLinks.length;i++){
-        
+    const list = document.getElementById("list");
+    let orderedList = document.createElement("ul");
+    for (let i = 0; i < gdriveLinks.length; i++) {
         let currSong = document.createElement("li");
-        currSong.addEventListener('click',()=>{
-            let prev= document.querySelector(".curSong");
-            if(prev)prev.classList.remove('curSong');            
+        currSong.addEventListener('click', () => {
+            let prev = document.querySelector(".curSong");
+            if (prev) prev.classList.remove('curSong');
             currSong.classList.add("curSong");
             playFromList(i);
         });
-        currSong.innerText=gdriveLinks[i]["title"];
+        currSong.innerText = gdriveLinks[i].title;
         orderedList.appendChild(currSong);
     }
     list.appendChild(orderedList);
 }
-createList();
 
 function playFromList(index) {
     currentIndex = index;
     play();
 }
+
+createList();
+
 
