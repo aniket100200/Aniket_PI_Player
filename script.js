@@ -136,7 +136,7 @@ function user() {
     setTimeout(() => {
         document.getElementById("userName").style.display = "none";
         document.getElementById("login").style.display = "none";
-        user.innerHTML = `<h3 style='color: green;'>${username}<span> !!</span></h3>`;
+        user.style.display="none";
     }, 2000);
     play();
 }
@@ -191,5 +191,34 @@ function playFromList(index) {
 }
 
 createList();
+
+
+// script.js
+
+document.addEventListener('DOMContentLoaded', () => {
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    setTimeout(()=>{
+        darkModeToggle.checked = ture;
+    },300);
+
+    // Check for saved user preference, if any, on load of the website
+    const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const savedTheme = localStorage.getItem('dark-mode');
+    if (savedTheme === 'true' || (!savedTheme && userPrefersDark)) {
+        document.body.classList.add('dark-mode');
+        darkModeToggle.checked = true;
+    }
+
+    darkModeToggle.addEventListener('change', () => {
+        if (darkModeToggle.checked) {
+            document.body.classList.add('dark-mode');
+            localStorage.setItem('dark-mode', 'true');
+        } else {
+            document.body.classList.remove('dark-mode');
+            localStorage.setItem('dark-mode', 'false');
+        }
+    });
+});
+
 
 
