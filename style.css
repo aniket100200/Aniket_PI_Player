@@ -61,8 +61,11 @@ button:hover {
 }
 
 #user {
+    display: flex;
+    gap: 20px;
     width: fit-content;
     height: fit-content;
+    font-size: 25px;
     padding: 10px;
     margin: 20px;
     position: fixed;
@@ -74,6 +77,10 @@ button:hover {
     text-wrap: wrap;
     text-align: center;
     border-radius: 10px;
+}
+
+#user div{
+    cursor: pointer;
 }
 
 .list {

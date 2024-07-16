@@ -1,5 +1,6 @@
 let currentIndex = 0;
-const gdriveLinks = [
+let gdriveLinks;
+const all = [
     { title: "Masakali", link: 'https://drive.google.com/file/d/1kuvXYPJ1wk9OUkQpOXDc5ue8oB5RoLFP/view?usp=drivesdk' },
     { title: "Brown Rang", link: 'https://drive.google.com/file/d/1CucDvxbiLEU5UsfzDKvWi_x7GD4_Wz1V/view?usp=drivesdk' },
     { title: "Ek Tera Naam Hai Saaza", link: 'https://drive.google.com/file/d/1CwyQQLHeRP_M_fmFnu78wCG8NOm3V54L/view?usp=drivesdk' },
@@ -64,6 +65,30 @@ const gdriveLinks = [
     { title: "You Are My Sonia", link: 'https://drive.google.com/file/d/1nn9xrhCF_G519pw3a0Ir9CNnLP81Q-6W/view?usp=drivesdk' }
 ];
 
+let myFavorite=[
+  { title: "Jag ghumia", link: "https://drive.google.com/file/d/1GNBE80geq1_fAjfHUwyRpquHKJsERvN0/view?usp=drivesdk" },
+  { title: "Zihal-e-miskin", link: "https://drive.google.com/file/d/1NAydqbYDLwqQsszBuqrhssKcMuV3oO4q/view?usp=drivesdk" },
+  { title: "Jita tha jiske liye", link: "https://drive.google.com/file/d/1MPhTS-LtJSJW1ZClxdnNsrihByXdoMSz/view?usp=drivesdk" },
+  { title: "Kamaria dole bhojpuri", link: "https://drive.google.com/file/d/1Jjci3NqpV9XTCgtD7OZQV7UH3dexhHnj/view?usp=drivesdk" },
+  { title: "Kya hua Tera Wada", link: "https://drive.google.com/file/d/1JPbpprfUYJqlhSGIg2el9FUZrHGZzsiU/view?usp=drivesdk" },
+  { title: "Meri Aashiqui", link: "https://drive.google.com/file/d/1HGjot5BLXuHvO-kaJo8xALIot1kAYwFL/view?usp=drivesdk" },
+  { title: "Mirchi Divine", link: "https://drive.google.com/file/d/1LouS0sTX6_ZoZcih14mazbcvZpoASVnq/view?usp=drivesdk" },
+  { title: "Param Sundari", link: "https://drive.google.com/file/d/1KHUu0IxsN7b8_1JaREvw7ycgmH-JCJUV/view?usp=drivesdk" },
+  { title: "Peen Loo", link: "https://drive.google.com/file/d/1KlJ4WyrMpePrasxdEbDcm_XwBqByykCY/view?usp=drivesdk" },
+  { title: "Peena Chod Denge", link: "https://drive.google.com/file/d/1Hdrq4NfqhtSEk7Nov5-oeZLPeZK9h--a/view?usp=drivesdk" },
+  { title: "Dil Shambhala Ja Jara", link: "https://drive.google.com/file/d/1KeFZzrvvceYp4_0KCLtQ6SlKOXf50aqS/view?usp=drivesdk" },
+  { title: "Rabba Mai to Mar Gaya vhe", link: "https://drive.google.com/file/d/1KupKZFF292fekiPNsLaWhIbAfPvqiY0W/view?usp=drivesdk" },
+  { title: "Saans", link: "https://drive.google.com/file/d/1G41VdpYNwpDFll2EhYiPZfZh-ab78YT3/view?usp=drivesdk" },
+  { title: "Saawan me Lag gayi aag", link: "https://drive.google.com/file/d/1LsTj4f2-HZy0JLUp1KghYzKV-rfmbVv1/view?usp=drivesdk" },
+  { title: "Tere bin X sajni Re", link: "https://drive.google.com/file/d/1K8KUmtKpZjI_WP5ptjdcr4jk73NGuwfi/view?usp=drivesdk" },
+  { title: "Tere Liye", link: "https://drive.google.com/file/d/1GvF-iLwdffG8kUeKQQErKu-cc-5Hbz_M/view?usp=drivesdk" },
+  { title: "Tujh mein rab dikhta Hai", link: "https://drive.google.com/file/d/1H4hedryo8p6wCYNXFCYnRg45NoJgJ2sS/view?usp=drivesdk" },
+  { title: "Woh Ladki Bahut Yaad Aati hai", link: "https://drive.google.com/file/d/1MmxasNaBFpk7KRz8BlQ2yc5ZDXtmeC_7/view?usp=drivesdk" },
+  { title: "Zara sa", link: "https://drive.google.com/file/d/1LRGDjipaJJ_eQdPinuStpK4jYpfbl9v0/view?usp=drivesdk" },
+  { title: "Urvashi", link: "https://drive.google.com/file/d/1fgPyw9aKXIXmYDCHwbbkKOx5_jqVjFR1/view?usp=drivesdk" },
+  { title: "You are my sonia", link: "https://drive.google.com/file/d/1fm6qYH57QledA3QjhT_8Ffd_l5_LB-3R/view?usp=drivesdk" }
+];
+
 function loadMusic() {
     const gdriveLink = document.getElementById('gdriveLink').value;
     if (gdriveLink.includes('drive.google.com')) {
@@ -80,12 +105,7 @@ function loadMusic() {
     }
 }
 
-function play() {
-    let username = localStorage.getItem("user");
-    if (!username) {
-        alert("Please Login!!");
-        return;
-    }
+function play() {      
     if (currentIndex >= 0 && currentIndex < gdriveLinks.length) {
         console.log(gdriveLinks[currentIndex].link);
         const embedLink = `https://drive.google.com/file/d/${gdriveLinks[currentIndex].link.match(/\/d\/([^\/]+)\//)[1]}/preview`;
@@ -126,21 +146,6 @@ function randomFunction() {
     play();
 }
 
-function user() {
-    let username = document.getElementById("userName").value;
-    let user = document.getElementById("user");
-    localStorage.setItem("user", username);
-    user.style.display = "block";
-    user.innerHTML = `Aniket Welcomes You <h3 style='color: green;'>${username}<span> !!</span></h3>`;
-
-    setTimeout(() => {
-        document.getElementById("userName").style.display = "none";
-        document.getElementById("login").style.display = "none";
-        user.style.display="none";
-    }, 2000);
-    play();
-}
-
 function setupIframeListener() {
     const audioPlayer = document.getElementById('audioPlayer');
     audioPlayer.onload = () => {
@@ -168,8 +173,16 @@ window.onload = () => {
 
 const audioContainer = document.getElementById("audioContainer");
 
-function createList() {
+function createList(index) {
+    if(index==2){gdriveLinks=myFavorite;}
+    else if(index==3){
+        alert("If you are really wanted to create your own Playlist you can contact me through Social Media. Links are in the footer");
+        return;
+    }else{
+        gdriveLinks= all;
+    }
     const list = document.getElementById("list");
+    list.innerHTML="";
     let orderedList = document.createElement("ul");
     for (let i = 0; i < gdriveLinks.length; i++) {
         let currSong = document.createElement("li");
@@ -220,5 +233,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
+let ele = document.getElementById("love");
+ele.addEventListener('change',(e)=>{
+   createList(e.target.value);
+})
 
