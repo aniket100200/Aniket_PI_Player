@@ -89,6 +89,16 @@ let myFavorite=[
   { title: "You are my sonia", link: "https://drive.google.com/file/d/1fm6qYH57QledA3QjhT_8Ffd_l5_LB-3R/view?usp=drivesdk" }
 ];
 
+const bhakti=[
+    {title: "Hai Katha Sangram Ki ", link :"https://drive.google.com/file/d/1qJ2H41yyp1ysqEubCbh6Cl7uGfUuVVDw/view?usp=drivesdk"},
+    {title:"Namo Namo He Shankara ", link :"https://youtu.be/dx4Teh-nv3A?si=dMFBVvvenMuvWZbx"},
+	{title:"Mauli Mauli", link : "https://drive.google.com/file/d/10gGEhV7a2jyXX7ohOYwYbu55szUd0p43/view?usp=drivesdk"},
+	{title:"Mere Baba",link:"https://drive.google.com/file/d/10cPa_6WNM2Cc_crtE-0QWL44xIBFY62O/view?usp=drivesdk"},
+	{title:"Kal Ratri Hey Kalyani",link:"https://drive.google.com/file/d/10dVpHqWf-VEoV9rNqtlUJahqtEAjEIWZ/view?usp=drivesdk"},
+	{title:"Kee Jo Keshri ke laal",link:"https://drive.google.com/file/d/10m-m1sx69jsS9eeBKoeXv2dkL35UM-1n/view?usp=drivesdk"},
+	{title:"Mere Shankara",link:"https://drive.google.com/file/d/10qGkE85BXM1AiCmWyGZMPlbmMeW018uw/view?usp=drivesdk"},
+];
+
 function loadMusic() {
     const gdriveLink = document.getElementById('gdriveLink').value;
     if (gdriveLink.includes('drive.google.com')) {
@@ -175,10 +185,13 @@ const audioContainer = document.getElementById("audioContainer");
 
 function createList(index) {
     if(index==2){gdriveLinks=myFavorite;}
-    else if(index==3){
+    else if(index==4){
         alert("If you are really wanted to create your own Playlist you can contact me through Social Media. Links are in the footer");
         return;
-    }else{
+    }else if(index==3){
+        gdriveLinks=bhakti;
+    }
+    else {
         gdriveLinks= all;
     }
     const list = document.getElementById("list");
